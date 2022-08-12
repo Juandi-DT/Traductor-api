@@ -4,17 +4,17 @@ traductor con la API de MyMemory API
 
 utilización de la tecnología de traducción de la API de MyMemory.
 
-[ Puedes visitar la página traductor API aquí. ](https://juandi-dt.github.io/traductor-api.github.io/)
+[ Puedes visitar la página traductor API aquí. ](https://traductor-api.vercel.app/)
 
 # Como traducir:
 
-Para ello simplemente ya con el texto introducido en el recuadro izquierdo solo le das un click o un toque (si estas en móvil) en su respectivo recuadro con el nombre del idioma (por default inglés, ya que solo hay para traducción de ingles a español por ahora).
+Para ello simplemente ya con el texto introducido en el recuadro del primer idioma das un click en el boton de play que esta en la barra del medio.
 
 # Funciones:
 
 ## 1. Micrófono:
 
-Al mantener presionado el micrófono en la pantalla, podrás decir lo que quieras y este te lo transcribirá en el recuadro del idioma original o el que está más a la izquierda (en ordenadores y en móviles el que está más arriba).
+Al presionar el micrófono en la pantalla, podrás decir lo que quieras y este te lo transcribirá en su respesctivo recuadro
 
 ## 2. Copiar y Pegar:
 
@@ -22,7 +22,7 @@ En los dos recuadros del traductor hay dos botones que a continuación veremos s
 
 1.  solo copiar y pegar:
 
-    > para esto se utiliza el botón más a la derecha el cual copia el texto que haya en el recuadro de traducción o si lo haces en el recuadro de entrada de texto, se copiara el texto que este en este.
+    > para esto utiliza el botón de copiar el cual copia el texto que haya en el recuadro de traducción.
 
 2.  copiar en formato plano para apps como Anki:
 
@@ -32,7 +32,7 @@ En los dos recuadros del traductor hay dos botones que a continuación veremos s
 
     Al darle a este botón se guardará en cache (sesión storage) lo que vayas traduciendo, guardando el texto original y su traducción, separado por un “ ; ”, y cuando le des nuevamente a este botón te agregará a la traducción ya copiada la nueva traducción ingresada, estas traducciones diferentes las separa con un salto de línea.
 
-    Este formato con separación de ';' y salto de línea es el formato de texto plano admitido por la app Anki.
+    Este formato con separación de ';' y '|' es el formato de texto plano admitido por la app Anki.
 
     > Se puede utilizar para pegar este 'cache' en un archivo .txt (texto plano) para después importarlo en la aplicación Anki.
 
