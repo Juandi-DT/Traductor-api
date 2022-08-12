@@ -1,0 +1,39 @@
+.item {
+    padding: 5px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: var(--icons);
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.desplegate {
+    position: absolute;
+}
+
+.item svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--letter);
+}
+
+@media screen and (max-width:1200px) {
+    .item svg {
+        padding: 1px;
+    }
+}
+
+@media screen and (max-width:786px) {
+    .item svg {
+        padding: 2px;
+    }
+}

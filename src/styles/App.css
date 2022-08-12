@@ -1,0 +1,153 @@
+.Traductor {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--background);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+
+.lenguaje-box {
+    position: relative;
+    background: var(--items);
+    border-radius: 27px;
+    width: 100%;
+    min-width: 30pc;
+    max-width: 31pc;
+    height: 17.5pc;
+    padding: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.lenguaje-box>textarea {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    resize: none;
+    overflow: auto;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--letter)
+}
+
+.lenguaje-box>textarea::placeholder {
+    color: var(--letter)
+}
+
+.iconsArea {
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    margin: 1pc auto;
+}
+
+.menu-box {
+    width: 3.25pc;
+    min-height: 12pc;
+    max-height: 20pc;
+    border-radius: 25px;
+    background: var(--items);
+    display: flex;
+    overflow-y: auto;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: var(--shadow);
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+/* anki section */
+
+.anki-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 15pc;
+}
+
+.anki-list table {
+    border: 1px solid var(--items);
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 60pc;
+    height: 100%;
+    max-height: 18pc;
+}
+
+.anki-list table tr {
+    height: 3pc;
+}
+
+.anki-list table tbody td {
+    font-size: 20px;
+    text-align: center;
+    background: var(--items);
+}
+
+.anki-list thead th {
+    color: var(--icons);
+    background: var(--header);
+}
+
+.other {
+    color: var(--other);
+    background: var(--letter);
+    padding: 10px;
+    border-radius: 15px;
+    min-width: 20pc;
+    text-align: center;
+}
+
+/* responsive */
+
+
+@media screen and (max-width:1200px) {
+    .lenguaje-box {
+        max-width: 70%;
+    }
+
+    .menu-box {
+        flex-direction: row;
+        min-height: 3.25pc;
+        max-height: 3.25pc;
+        min-width: 12pc;
+        max-width: 20pc;
+    }
+
+    .menu-box div[title="Translate"] {
+        transform: rotate(90deg);
+    }
+
+    .anki-list table {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width:786px) {
+    .lenguaje-box {
+        min-width: 22pc;
+        max-width: 88%;
+    }
+
+    .anki-list table {
+        max-width: 95%;
+    }
+}
