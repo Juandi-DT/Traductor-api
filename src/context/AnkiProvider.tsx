@@ -20,7 +20,7 @@ export const AnkiProvider: FC<AnkiProviderProps> = ({ children }) => {
         setAnkiData([]);
         localStorage.setItem("anki", "");
       } else {
-        const newArray = data.split("|");
+        const newArray = data.split('/n');
         const newData: AnkiData[] = newArray.map(item => {
           const arrayItem = item.split(";");
           return {
@@ -50,7 +50,7 @@ export const AnkiProvider: FC<AnkiProviderProps> = ({ children }) => {
         })
         .map(({ original, translate }) => `${original};${translate}`);
 
-      const joinData = newData?.join("|");
+      const joinData = newData?.join('/n');
       localStorage.setItem("anki", joinData || "");
       copyAnkiData();
       // console.log("cambio en useEffect de ankiPrpvider");
