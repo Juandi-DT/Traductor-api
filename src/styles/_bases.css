@@ -115,15 +115,16 @@ main hr {
 
 footer {
     position: sticky;
-    top: 100%;
-    width: 100%;
-    color: var(--letter);
-    text-align: center;
-    font-size: 18px;
-    z-index: 5;
-    background: var(--header);
-    box-shadow: 0px 0px 8px rgb(97 92 151 / 11%);
-    padding: 4px;
+  top: 100%;
+  min-width: -webkit-fill-available;
+  max-width: 100%;
+  color: var(--letter);
+  text-align: center;
+  font-size: 18px;
+  z-index: 5;
+  background: var(--header);
+  box-shadow: 0 0 8px #615c971c;
+  padding: 4px;
 }
 
 footer>a {
